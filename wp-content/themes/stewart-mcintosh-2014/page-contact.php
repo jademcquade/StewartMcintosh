@@ -26,20 +26,6 @@ get_header(); ?>
 
 					<p><span>E:</span> stewart.mcintosh@btinternet.com</p>
 
-						<form action="submit.php" method="post">
-
-					    <p>Your name: <input type="text" name="name" /></p>
-
-					    <p>Your email: <input type="text" name="email" /></p>
-
-					    <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
-
-					    <p><textarea name="message"></textarea></p>
-
-					    <p><input type="submit" value="Send" /></p>
-
-						</form>
-
 				</div>
 						
 			<?php endwhile; else : ?>
