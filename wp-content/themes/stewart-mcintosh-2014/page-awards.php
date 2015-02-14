@@ -5,6 +5,8 @@ Template Name: Our Awards
 
 get_header(); ?>
 
+<?php get_sidebar(); ?>
+
 <div id="main-content" class="main-content">
 
 	<div id="primary" class="content-area">
@@ -30,7 +32,6 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
 
 <?php

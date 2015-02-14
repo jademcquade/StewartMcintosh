@@ -8,6 +8,8 @@
  */
 ?>
 <div id="secondary">
-	
-	<p>sidebar</p>
+
+	<?php twentyfourteen_post_thumbnail();
+	?>
+
 </div><!-- #secondary -->

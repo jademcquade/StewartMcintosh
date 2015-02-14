@@ -61,6 +61,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * -----------------------------------------------------------------------------
  */
 
+html {background: #FFF;}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
@@ -824,7 +826,7 @@ span + .edit-link:before,
 }
 
 .main-content {
-	width: 100%;
+	padding: 0 20px;
 }
 
 
@@ -1044,10 +1046,6 @@ span + .edit-link:before,
  * 6.0 Content
  * -----------------------------------------------------------------------------
  */
-
-.content-area {
-	padding-top: 48px;
-}
 
 .hentry {
 	margin: 0 auto 48px;
@@ -2151,7 +2149,6 @@ a.post-thumbnail:hover {
 
 #secondary {
 	background-color: #000;
-	border-top: 1px solid #000;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	clear: both;
 	color: rgba(255, 255, 255, 0.7);
@@ -3316,7 +3313,6 @@ a.post-thumbnail:hover {
 
 	.content-area {
 		float: left;
-		width: 100%;
 	}
 
 	.site-content {
@@ -3443,7 +3439,7 @@ a.post-thumbnail:hover {
 	}
 
 	.header-main {
-		padding-right: 0;
+		/*padding-right: 0;*/
 	}
 
 	.search-toggle {
@@ -3462,7 +3458,7 @@ a.post-thumbnail:hover {
 	}
 
 	.masthead-fixed .site-main {
-		margin-top: 48px;
+		margin-top: 70px;
 	}
 
 	/* Navigation */
@@ -3648,10 +3644,10 @@ a.post-thumbnail:hover {
 }
 
 @media screen and (min-width: 846px) {
-	.content-area,
+/*	.content-area,
 	.content-sidebar {
 		padding-top: 72px;
-	}
+	}*/
 
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
@@ -3696,13 +3692,9 @@ a.post-thumbnail:hover {
 		padding-left: 182px;
 	}
 
-	.main-content {
-		float: left;
-	}
-
 	.site-content {
 		margin-right: 29.04761904%;
-		margin-left: 182px;
+		/*margin-left: 182px;*/
 	}
 
 	.site-content .entry-header {
@@ -3719,7 +3711,6 @@ a.post-thumbnail:hover {
 	}
 
 	.site:before {
-		background-color: #000;
 		content: "";
 		display: block;
 		height: 100%;
@@ -3736,9 +3727,7 @@ a.post-thumbnail:hover {
 		border: 0;
 		clear: none;
 		float: left;
-		margin: 0 0 0 -100%;
-		min-height: 100vh;
-		width: 122px;
+		width: 30%;
 	}
 
 	.primary-sidebar {
@@ -3990,7 +3979,7 @@ a.post-thumbnail:hover {
 	}
 
 	.featured-content {
-		padding-left: 182px;
+		/*padding-left: 182px;*/
 	}
 
 	.grid .featured-content .hentry {
@@ -4049,10 +4038,10 @@ a.post-thumbnail:hover {
 		width: 324px;
 	}
 
-	.site-content,
+/*	.site-content,
 	.site-main .widecolumn {
 		margin-left: 222px;
-	}
+	}*/
 
 	.site:before {
 		width: 222px;
@@ -4061,10 +4050,6 @@ a.post-thumbnail:hover {
 	.search-box-wrapper,
 	.featured-content {
 		padding-left: 222px;
-	}
-
-	#secondary {
-		width: 162px;
 	}
 
 	.secondary-navigation,
@@ -4320,3 +4305,10 @@ a.post-thumbnail:hover {
 		line-height: 36px;
 	}
 }
+
+/* Override styles */
+p.antispam {display: none;}
+span {color: red;}
+#secondary {margin-bottom: 40px;}
+#secondary, .post-thumbnail, .site-footer {background: white;}
+.site-footer, .site-info, .site-info a {color: black;}
