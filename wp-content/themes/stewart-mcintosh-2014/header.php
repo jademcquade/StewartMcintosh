@@ -45,7 +45,7 @@
 		<div class="header-main">
 
 			<div id="logo">
-				<img src="<?php bloginfo ('template_url'); ?>/images/logo.png" alt="Stewart McIntosh Media" />
+				<a href="http://localhost/stewart-mcintosh"><img src="<?php bloginfo ('template_url'); ?>/images/logo.png" alt="Stewart McIntosh Media" /></a>
 			</div>
 
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">

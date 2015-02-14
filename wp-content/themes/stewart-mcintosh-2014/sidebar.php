@@ -9,7 +9,6 @@
 ?>
 <div id="secondary">
 
-	<?php twentyfourteen_post_thumbnail();
-	?>
+	<?php twentyfourteen_post_thumbnail(); ?>
 
 </div><!-- #secondary -->

@@ -1,6 +1,20 @@
 <?php get_header(); ?>
 
+<div id="slider">
+
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	<?php twentyfourteen_post_thumbnail(); ?>
+				
+	<?php endwhile; else : ?>
+		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<?php endif; ?>
+	
+<div>
+
 <div id="main-content" class="main-content">
+
+
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
