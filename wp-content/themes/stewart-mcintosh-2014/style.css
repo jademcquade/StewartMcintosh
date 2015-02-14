@@ -3431,6 +3431,16 @@ a.post-thumbnail:hover {
 	}
 }
 
+@media screen and (max-width: 783px) {
+	#main.site-main {
+		margin-top: 30px;
+	}
+
+	#secondary {
+		padding: 0 30px;
+	}
+}
+
 @media screen and (min-width: 783px) {
 	.site-title {
 		/* Search-toggle width = 48px */
@@ -3589,6 +3599,10 @@ a.post-thumbnail:hover {
 		content: "\f501";
 		right: 8px;
 		top: 20px;
+	}
+
+	#secondary {
+		padding: 0 40px;
 	}
 }
 
@@ -4307,8 +4321,11 @@ a.post-thumbnail:hover {
 }
 
 /* Override styles */
-p.antispam {display: none;}
 span {color: red;}
+
 #secondary {margin-bottom: 40px;}
 #secondary, .post-thumbnail, .site-footer {background: white;}
 .site-footer, .site-info, .site-info a {color: black;}
+
+.site-content .entry-header, .page .entry-content {margin-left: 0;}
+.site-content .entry-header {padding-left: 20px; padding-right: 0;}
