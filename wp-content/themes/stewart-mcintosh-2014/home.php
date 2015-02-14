@@ -5,20 +5,48 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<div id="trio" class="entry-content">
 
-				<header class="entry-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header> 
+				<div>
+					<?php query_posts( 'category_name=clarity' );
 
-				<div class="entry-content">
-					<?php the_content(); ?>
+					while ( have_posts() ) : the_post();
+					    echo '<h2 class="red">'; the_title(); echo '</h2>';
+
+					    echo '<p>'; the_content(); echo '</p>';
+					endwhile;
+
+					wp_reset_query();
+					?>
 				</div>
-						
-			<?php endwhile; else : ?>
-				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-			<?php endif; ?>
 
+				<div>
+					<?php query_posts( 'category_name=brevity' );
+
+					while ( have_posts() ) : the_post();
+					    echo '<h2 class="red">'; the_title(); echo '</h2>';
+
+					    echo '<p>'; the_content(); echo '</p>';
+					endwhile;
+
+					wp_reset_query();
+					?>
+				</div>
+
+				<div>
+					<?php query_posts( 'category_name=verity' );
+
+					while ( have_posts() ) : the_post();
+					    echo '<h2 class="red">'; the_title(); echo '</h2>';
+
+					    echo '<p>'; the_content(); echo '</p>';
+					endwhile;
+
+					wp_reset_query();
+					?>
+				</div>
+
+			</div>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

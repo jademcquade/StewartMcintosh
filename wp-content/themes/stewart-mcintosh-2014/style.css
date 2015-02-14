@@ -3439,6 +3439,10 @@ a.post-thumbnail:hover {
 	#secondary {
 		padding: 0 30px;
 	}
+
+	#trio.entry-content div {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 783px) {
@@ -3446,10 +3450,6 @@ a.post-thumbnail:hover {
 		/* Search-toggle width = 48px */
 		max-width: -webkit-calc(100% - 48px);
 		max-width:         calc(100% - 48px);
-	}
-
-	.header-main {
-		/*padding-right: 0;*/
 	}
 
 	.search-toggle {
@@ -4322,6 +4322,10 @@ a.post-thumbnail:hover {
 
 /* Override styles */
 span {color: red;}
+
+#logo {float: left;}
+
+#trio.entry-content div {float: left; margin-bottom: 20px;}
 
 #secondary {margin-bottom: 40px;}
 #secondary, .post-thumbnail, .site-footer {background: white;}
