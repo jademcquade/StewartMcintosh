@@ -4,17 +4,38 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php twentyfourteen_post_thumbnail(); ?>
+			<?php the_post_thumbnail( 'home-slider' ); ?> 
 				
 	<?php endwhile; else : ?>
 		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	<?php endif; ?>
-	
-<div>
+
+	<?php wp_reset_query(); ?>
+
+	<div id="overlay">
+
+		<div id="intro">
+			<?php query_posts( 'category_name=homepage message' );
+
+				while ( have_posts() ) : the_post();
+
+				the_content();
+				    
+				endwhile;
+
+				wp_reset_query();
+			?>
+		</div>
+
+	</div>
+
+		
+
+</div><!-- end slider -->
+
+
 
 <div id="main-content" class="main-content">
-
-
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -66,4 +87,4 @@
 	</div><!-- #primary -->
 </div><!-- #main-content -->
 
-<?php get_footer();
+<?php get_footer( 'home' ); ?>
