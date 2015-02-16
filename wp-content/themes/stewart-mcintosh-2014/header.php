@@ -31,7 +31,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
+
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -40,7 +42,9 @@
 	</div>
 	<?php endif; ?>
 
-	<header id="masthead" class="site-header" role="banner">
+	
+
+		<header id="masthead" class="site-header" role="banner">
 
 		<div class="header-main">
 
@@ -55,11 +59,4 @@
 			</nav>
 		</div>
 
-		<div id="search-container" class="search-box-wrapper hide">
-			<div class="search-box">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
 	</header><!-- #masthead -->
-
-	<div id="main" class="site-main">

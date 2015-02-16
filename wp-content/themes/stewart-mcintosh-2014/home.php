@@ -4,7 +4,14 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<?php the_post_thumbnail( 'home-slider' ); ?> 
+	<?php
+   if (is_mobile()) {
+   the_post_thumbnail('small');
+   } else {
+   the_post_thumbnail('full');
+} ?>
+
+			<!--?php the_post_thumbnail( 'home-slider' ); ?--> 
 				
 	<?php endwhile; else : ?>
 		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
