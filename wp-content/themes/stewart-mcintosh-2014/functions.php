@@ -77,7 +77,7 @@ function twentyfourteen_setup() {
 	add_theme_support( 'post-thumbnails' );
 /*	set_post_thumbnail_size( 672, 372, true );
 */	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
-add_image_size( 'home-slider', 1400, auto, true );
+	add_image_size( 'home-slider', 1400, auto, true );
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
@@ -518,3 +518,14 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+/* Queue my Javascript file */
+function my_script()
+{
+    // Register the script like this for a theme:
+    wp_register_script( 'custom-script', get_template_directory_uri() . '/js/script.js' );
+ 
+    // For either a plugin or a theme, you can then enqueue the script:
+    wp_enqueue_script( 'custom-script' );
+}
+add_action( 'wp_enqueue_scripts', 'my_script' );
