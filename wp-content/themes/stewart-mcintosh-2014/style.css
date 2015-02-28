@@ -834,8 +834,6 @@ span + .edit-link:before,
 
 .main-content {
 	padding: 0 20px;
-	max-width: 1000px;
-	border: 1px solid red;
 	overflow: auto;
 }
 
@@ -3461,7 +3459,7 @@ span + .edit-link:before,
 	#overlay {
 		width: 100%;
 		position: absolute;
-		top: 120px;
+		top: 110px;
 		right: 0;
 		font-size: 22px;
 	}
@@ -3527,6 +3525,7 @@ span + .edit-link:before,
 		display: inline-block;
 		height: 48px;
 		line-height: 48px;
+		font-size: 16px;
 		position: relative;
 	}
 
@@ -3617,9 +3616,6 @@ span + .edit-link:before,
 		top: 20px;
 	}
 
-/*	#secondary {
-		padding: 0 40px;
-	}*/
 }
 
 @media screen and (min-width: 810px) {
@@ -3676,7 +3672,7 @@ span + .edit-link:before,
 
 @media screen and (min-width: 846px) {
 
- 	#trio.entry-content div {width: 30%; margin-right: 20px;}
+ 	#trio.entry-content div {width: 30%; margin-right: 30px;}
 
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
@@ -3718,9 +3714,14 @@ span + .edit-link:before,
 
 @media screen and (min-width: 1008px) {
 
+	#slider {
+		max-height: 500px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
 	#secondary {
 		max-width: 400px;
-		border: 1px solid blue;
 	}
 
 	.search-box-wrapper {
@@ -4360,7 +4361,7 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 	background: #fff;
 	color: #000;
 	background: none;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.2);
 }
 #intro p {
 	margin-bottom: 0;
