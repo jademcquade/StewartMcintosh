@@ -7,7 +7,7 @@ Description: In 2014, our default theme lets you create a responsive magazine we
 Version: 1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featu#db001c-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
 Text Domain: twentyfourteen
 
 This theme, like WordPress, is licensed under the GPL.
@@ -41,7 +41,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *   7.1 - Widgets
  *   7.2 - Content Sidebar Widgets
  * 8.0 - Footer
- * 9.0 - Featured Content
+ * 9.0 - Featu#db001c Content
  * 10.0 - Multisite
  * 11.0 - Media Queries
  * 12.0 - Print
@@ -137,7 +137,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: red;
+	color: #db001c;
 }
 
 h1,
@@ -150,9 +150,9 @@ h6 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 1.3846153846;
-	text-transform: uppercase;
+	margin-bottom: 5px;
 }
 
 h2 {
@@ -447,14 +447,12 @@ hr {
  * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-/*	background: #24890d;
-*/	color: #fff;
+	background: #f4f4f4;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-/*	background: #24890d;
-*/	color: #fff;
+	background: #f4f4f4;
 	text-shadow: none;
 }
 
@@ -816,8 +814,9 @@ span + .edit-link:before,
 }
 
 .main-content {
-	padding: 0 20px;
+	padding: 0 30px;
 	overflow: auto;
+	margin-bottom: 20px;
 }
 
 
@@ -863,7 +862,7 @@ span + .edit-link:before,
 
 .site-title a,
 .site-title a:hover {
-	color: red;
+	color: #db001c;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -949,7 +948,7 @@ span + .edit-link:before,
 }
 
 .site-navigation a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .site-navigation .current_page_item > a,
@@ -1000,7 +999,7 @@ span + .edit-link:before,
 }
 
 .menu-toggle {
-	background-color: red;
+	background-color: #db001c;
 	border-radius: 0;
 	cursor: pointer;
 	height: 48px;
@@ -1083,7 +1082,7 @@ span + .edit-link:before,
 }
 
 .entry-title {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 300;
 	line-height: 1.0909090909;
 	margin-bottom: 5px;
@@ -1094,7 +1093,7 @@ span + .edit-link:before,
 }
 
 .entry-title a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .site-content .entry-header {
@@ -1139,7 +1138,7 @@ span + .edit-link:before,
 }
 
 .cat-links a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .byline {
@@ -1153,7 +1152,7 @@ span + .edit-link:before,
 
 .site-content .entry-meta {
 	background-color: #fff;
-	margin-bottom: 8px;
+	margin: 10px 0 8px 0;
 }
 
 .site-content footer.entry-meta {
@@ -1194,7 +1193,7 @@ span + .edit-link:before,
 }
 
 .entry-meta .tag-links a:hover:before {
-	border-right-color: red;
+	border-right-color: #db001c;
 }
 
 .entry-meta .tag-links a:after {
@@ -1461,8 +1460,8 @@ span + .edit-link:before,
 }
 
 .page-links a:hover {
-	background: red;
-	border: 1px solid red;
+	background: #db001c;
+	border: 1px solid #db001c;
 	color: #fff;
 }
 
@@ -1672,7 +1671,7 @@ span + .edit-link:before,
 
 .post-navigation a:hover,
 .image-navigation a:hover {
-	color: red;
+	color: #db001c;
 }
 
 /* Paging Navigation */
@@ -1706,7 +1705,7 @@ span + .edit-link:before,
 }
 
 .paging-navigation a:hover {
-	border-top: 5px solid red;
+	border-top: 5px solid #db001c;
 	color: #2b2b2b;
 }
 
@@ -1928,7 +1927,7 @@ span + .edit-link:before,
 .comment-list .pingback a:hover,
 .comment-list .trackback a:hover,
 .comment-metadata a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .comment-list article,
@@ -2073,7 +2072,7 @@ span + .edit-link:before,
 	line-height: 1.5;
 }
 
-.required {
+.requi#db001c {
 	color: #c0392b;
 }
 
@@ -2086,7 +2085,7 @@ span + .edit-link:before,
 }
 
 .comment-reply-title small a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .comment-reply-title small a:before {
@@ -2187,7 +2186,7 @@ span + .edit-link:before,
 }
 
 .widget a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .widget h1,
@@ -2367,7 +2366,7 @@ span + .edit-link:before,
 }
 
 .widget-title a:hover {
-	color: red;
+	color: #db001c;
 }
 
 /* Calendar Widget*/
@@ -2402,7 +2401,7 @@ span + .edit-link:before,
 }
 
 .widget_calendar tbody a:hover {
-	background-color: red;
+	background-color: #db001c;
 }
 
 .widget_calendar tbody a:hover {
@@ -2454,7 +2453,7 @@ span + .edit-link:before,
 }
 
 .widget_twentyfourteen_ephemera .entry-meta a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .widget_twentyfourteen_ephemera .entry-content ul,
@@ -2568,7 +2567,7 @@ span + .edit-link:before,
 }
 
 .content-sidebar .widget a:hover {
-	color: red;
+	color: #db001c;
 }
 
 .content-sidebar .widget pre {
@@ -2669,7 +2668,7 @@ span + .edit-link:before,
 }
 
 .content-sidebar .widget .widget-title a:hover {
-	color: red;
+	color: #db001c;
 }
 
 /* List Style Widgets*/
@@ -2813,16 +2812,16 @@ span + .edit-link:before,
 }
 
 .site-info a:hover {
-	color: red;
+	color: #db001c;
 }
 
 
 /**
- * 9.0 Featured Content
+ * 9.0 Featu#db001c Content
  * -----------------------------------------------------------------------------
  */
 
-.featured-content {
+.featu#db001c-content {
 	background: #000 url(images/pattern-dark.svg) repeat fixed;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -2831,36 +2830,36 @@ span + .edit-link:before,
 	width: 100%;
 }
 
-.featured-content-inner {
+.featu#db001c-content-inner {
 	overflow: hidden;
 }
 
-.featured-content .hentry {
+.featu#db001c-content .hentry {
 	color: #fff;
 	margin: 0;
 	max-width: 100%;
 	width: 100%;
 }
 
-.featured-content .post-thumbnail,
-.featured-content .post-thumbnail:hover {
+.featu#db001c-content .post-thumbnail,
+.featu#db001c-content .post-thumbnail:hover {
 	background: transparent;
 }
 
-.featured-content .post-thumbnail {
+.featu#db001c-content .post-thumbnail {
 	display: block;
 	position: relative;
 	padding-top: 55.357142857%;
 	overflow: hidden;
 }
 
-.featured-content .post-thumbnail img {
+.featu#db001c-content .post-thumbnail img {
 	left: 0;
 	position: absolute;
 	top: 0;
 }
 
-.featured-content .entry-header {
+.featu#db001c-content .entry-header {
 	background-color: #000;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -2870,15 +2869,15 @@ span + .edit-link:before,
 	padding: 24px 10px;
 }
 
-.featured-content a {
+.featu#db001c-content a {
 	color: #fff;
 }
 
-.featured-content a:hover {
-	color: red;
+.featu#db001c-content a:hover {
+	color: #db001c;
 }
 
-.featured-content .entry-meta {
+.featu#db001c-content .entry-meta {
 	color: #fff;
 	font-size: 11px;
 	font-weight: 700;
@@ -2886,11 +2885,11 @@ span + .edit-link:before,
 	margin-bottom: 12px;
 }
 
-.featured-content .cat-links {
+.featu#db001c-content .cat-links {
 	font-weight: 700;
 }
 
-.featured-content .entry-title {
+.featu#db001c-content .entry-title {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.3333333333;
@@ -2901,13 +2900,13 @@ span + .edit-link:before,
 
 /* Slider */
 
-.slider .featured-content .hentry {
+.slider .featu#db001c-content .hentry {
 	-webkit-backface-visibility: hidden;
 	display: none;
 	position: relative;
 }
 
-.slider .featured-content .post-thumbnail {
+.slider .featu#db001c-content .post-thumbnail {
 	padding-top: 55.49132947%;
 }
 
@@ -2953,7 +2952,7 @@ span + .edit-link:before,
 }
 
 .slider-control-paging a:hover:before {
-	background-color: red;
+	background-color: #db001c;
 }
 
 .slider-control-paging .slider-active:before,
@@ -3051,7 +3050,7 @@ span + .edit-link:before,
  */
 
 /* Does the same thing as <meta name="viewport" content="width=device-width">,
- * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * but in the future W3C standard way. -ms- prefix is requi#db001c for IE10+ to
  * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
  * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
  */
@@ -3160,7 +3159,7 @@ span + .edit-link:before,
 	.site-content .byline a:before,
 	.site-content .comments-link a:before,
 	.site-content .entry-date a:before,
-	.site-content .featured-post:before,
+	.site-content .featu#db001c-post:before,
 	.site-content .full-size-link a:before,
 	.site-content .parent-post-link a:before,
 	.site-content .post-format a:before {
@@ -3208,7 +3207,7 @@ span + .edit-link:before,
 		top: 1px;
 	}
 
-	.site-content .featured-post:before {
+	.site-content .featu#db001c-post:before {
 		content: "\f308";
 		margin-right: 3px;
 		position: relative;
@@ -3268,12 +3267,15 @@ span + .edit-link:before,
 	}
 
 	.site-content .entry-header {
-		padding-right: 30px;
-		padding-left: 30px;
 	}
 
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
+	}
+
+	#overlay {
+		padding: 10px 0;
+		background: rgba(255,255,255,0.1);
 	}
 
 	#intro {
@@ -3281,7 +3283,11 @@ span + .edit-link:before,
 		font-size: 18px;
 	}
 	#intro p {
-		font-size: 20px;		
+		font-size: 21px;		
+	}
+	#intro p:first-child {
+		font-size: 28px;
+		font-weight: 200;
 	}
 
 	#slideImg {
@@ -3360,7 +3366,6 @@ span + .edit-link:before,
 	.site-content .entry-summary,
 	.site-content footer.entry-meta {
 		padding-right: 30px;
-		padding-left: 30px;
 	}
 
 	.singular .site-content .hentry.has-post-thumbnail {
@@ -3385,16 +3390,16 @@ span + .edit-link:before,
 		width: 33.33333333%;
 	}
 
-	.grid .featured-content .hentry {
+	.grid .featu#db001c-content .hentry {
 		float: left;
 		width: 50%;
 	}
 
-	.grid .featured-content .hentry:nth-child( 2n+1 ) {
+	.grid .featu#db001c-content .hentry:nth-child( 2n+1 ) {
 		clear: both;
 	}
 
-	.grid .featured-content .entry-header {
+	.grid .featu#db001c-content .entry-header {
 		border-color: #000;
 		border-style: solid;
 		border-width: 12px 10px;
@@ -3402,12 +3407,12 @@ span + .edit-link:before,
 		padding: 0;
 	}
 
-	.slider .featured-content .entry-title {
+	.slider .featu#db001c-content .entry-title {
 		font-size: 22px;
 		line-height: 1.0909090909;
 	}
 
-	.slider .featured-content .entry-header {
+	.slider .featu#db001c-content .entry-header {
 		min-height: inherit;
 		padding: 24px 30px 48px;
 		position: absolute;
@@ -3455,15 +3460,23 @@ span + .edit-link:before,
 	#overlay {
 		width: 100%;
 		position: absolute;
-		top: 110px;
+		top: 130px;
 		right: 0;
 		font-size: 22px;
+		padding-right: 50px;
 	}
 	#intro {
-		width: 500px;
+		width: 550px;
 		float: right;
-		margin-right: 65px;
 		padding: 20px;
+		position: relative;
+		padding: 30px 0;
+	}
+	#intro p {
+
+	}
+	#intro p:first-child {
+		font-size: 28px;
 	}
 
 	.site-title {
@@ -3495,7 +3508,6 @@ span + .edit-link:before,
 	.primary-navigation {
 		float: right;
 		font-size: 11px;
-		margin: 0 1px 0 -12px;
 		padding: 0;
 		text-transform: uppercase;
 	}
@@ -3521,7 +3533,7 @@ span + .edit-link:before,
 		display: inline-block;
 		height: 48px;
 		line-height: 48px;
-		font-size: 16px;
+		font-size: 17px;
 		position: relative;
 	}
 
@@ -3529,7 +3541,7 @@ span + .edit-link:before,
 		display: inline-block;
 		padding: 0 12px;
 		white-space: nowrap;
-		color: red;
+		color: #db001c;
 	}
 
 	.primary-navigation ul ul {
@@ -3616,19 +3628,23 @@ span + .edit-link:before,
 		margin-top: 30px;
 	}
 
-	#intro {
-		position: relative;
-		padding: 50px;
+	.header-main {
+		padding: 20px;
 	}
 
 	#trio.entry-content div {
 		width: 100%;
 	}
 
-	#primary {
-/*		display: none;*/
+	#logo {
+		margin: 0 0 0 20px;
+		float: left;
 	}
 
+	#slideImg {
+		max-height: 450px;
+		overflow: hidden;
+	}
 }
 
 @media screen and (min-width: 948px) {
@@ -3717,7 +3733,7 @@ span + .edit-link:before,
 		margin-top: -72px;
 	}
 
-	.featured-content {
+	.featu#db001c-content {
 		margin-bottom: 0;
 	}
 
@@ -4018,23 +4034,23 @@ span + .edit-link:before,
 		line-height: 1.5;
 	}
 
-	.featured-content {
+	.featu#db001c-content {
 		/*padding-left: 182px;*/
 	}
 
-	.grid .featured-content .hentry {
+	.grid .featu#db001c-content .hentry {
 		width: 33.3333333%;
 	}
 
-	.grid .featured-content .hentry:nth-child( 2n+1 ) {
+	.grid .featu#db001c-content .hentry:nth-child( 2n+1 ) {
 		clear: none;
 	}
 
-	.grid .featured-content .hentry:nth-child( 3n+1 ) {
+	.grid .featu#db001c-content .hentry:nth-child( 3n+1 ) {
 		clear: both;
 	}
 
-	.grid .featured-content .entry-header {
+	.grid .featu#db001c-content .entry-header {
 		height: 120px;
 	}
 
@@ -4071,7 +4087,6 @@ span + .edit-link:before,
 	}
 
 	.site {
-		width:1200px;
 		margin: 0 auto;
 	}
 	.search-box .search-field {
@@ -4088,7 +4103,7 @@ span + .edit-link:before,
 	}
 
 	.search-box-wrapper,
-	.featured-content {
+	.featu#db001c-content {
 		padding-left: 222px;
 	}
 
@@ -4102,11 +4117,11 @@ span + .edit-link:before,
 		left: 202px;
 	}
 
-	.slider .featured-content .entry-title {
+	.slider .featu#db001c-content .entry-title {
 		font-size: 33px;
 	}
 
-	.slider .featured-content .entry-header,
+	.slider .featu#db001c-content .entry-header,
 	.slider-control-paging {
 		width: 534px;
 	}
@@ -4266,8 +4281,8 @@ span + .edit-link:before,
 	.site-title a,
 	.entry-meta,
 	.entry-meta a,
-	.featured-content .hentry,
-	.featured-content a {
+	.featu#db001c-content .hentry,
+	.featu#db001c-content a {
 		color: #2b2b2b;
 	}
 
@@ -4283,8 +4298,8 @@ span + .edit-link:before,
 	a.post-thumbnail:hover,
 	.site-content .entry-header,
 	.site-footer,
-	.featured-content,
-	.featured-content .entry-header {
+	.featu#db001c-content,
+	.featu#db001c-content .entry-header {
 		background: transparent;
 	}
 
@@ -4339,40 +4354,40 @@ span + .edit-link:before,
 		margin: 0 10px 48px;
 	}
 
-	.featured-content .hentry {
+	.featu#db001c-content .hentry {
 		margin-bottom: 48px;
 	}
 
-	.featured-content .post-thumbnail,
-	.slider .featured-content .post-thumbnail {
+	.featu#db001c-content .post-thumbnail,
+	.slider .featu#db001c-content .post-thumbnail {
 		padding-top: 0;
 	}
 
-	.featured-content .post-thumbnail img {
+	.featu#db001c-content .post-thumbnail img {
 		position: relative;
 	}
 
-	.featured-content .entry-header {
+	.featu#db001c-content .entry-header {
 		padding: 0 10px 24px;
 	}
 
-	.featured-content .entry-meta {
+	.featu#db001c-content .entry-meta {
 		font-size: 9pt;
 		margin-bottom: 11px;
 	}
 
-	.featured-content .cat-links {
+	.featu#db001c-content .cat-links {
 		font-weight: 900;
 	}
 
-	.featured-content .entry-title {
+	.featu#db001c-content .entry-title {
 		font-size: 25pt;
 		line-height: 36px;
 	}
 }
 
 /* Override styles */
-.red {color: red;}
+.#db001c {color: #db001c;}
 
 #logo {}
 
@@ -4388,7 +4403,7 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 	background: #fff;
 	color: #000;
 	background: none;
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.5);
 }
 #intro p {
 	margin-bottom: 0;
@@ -4404,7 +4419,7 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 }
 
 #trio.entry-content div {float: left;}
-#trio h2 {font-style: italic; font-weight: 700; margin-bottom: 15px; color: red;}
+#trio h2 {font-style: italic; font-weight: 700; margin-bottom: 15px; color: #db001c;}
 
 #secondary {margin-bottom: 40px;}
 #secondary, .post-thumbnail, .site-footer {background: white;}
@@ -4412,3 +4427,4 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 
 .site-content .entry-header, .page .entry-content {margin-left: 0;}
 .site-content .entry-header {padding-right: 0;}
+.entry-content ul li {margin:5px 0;}

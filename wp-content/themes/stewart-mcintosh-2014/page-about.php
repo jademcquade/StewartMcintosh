@@ -1,7 +1,7 @@
 <?php
-/**
- * The template for displaying all pages
- */
+/*
+Template Name: About Us
+*/
 get_header();
 get_sidebar(); ?>
 
@@ -13,7 +13,7 @@ get_sidebar(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<header class="entry-header">
-					<h1><?php the_title(); ?></h1>
+					<h1>About Stewart McIntosh</h1>
 				</header> 
 
 				<div class="entry-content">
@@ -28,4 +28,7 @@ get_sidebar(); ?>
 	</div><!-- #primary -->
 </div><!-- #main-content -->
 
-<?php get_footer();
+
+<?php
+get_sidebar();
+get_footer();
