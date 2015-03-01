@@ -4,12 +4,14 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+	<div id="slideImg">
 	<?php
-   if (is_mobile()) {
-   the_post_thumbnail('small');
-   } else {
-   the_post_thumbnail('full');
-} ?>
+		if (is_mobile()) {
+		   the_post_thumbnail('small');
+		   } else {
+		   the_post_thumbnail('full');
+		} ?>
+	</div>
 
 			<!--?php the_post_thumbnail( 'home-slider' ); ?--> 
 				
@@ -34,9 +36,7 @@
 			?>
 		</div>
 
-	</div>
-
-		
+	</div>		
 
 </div><!-- end slider -->
 
@@ -53,9 +53,8 @@
 					<?php query_posts( 'category_name=clarity' );
 
 					while ( have_posts() ) : the_post();
-					    echo '<h2 class="red">'; the_title(); echo '</h2>';
-
-					    echo '<p>'; the_content(); echo '</p>';
+					    echo '<h2>'; the_title(); echo '</h2>';
+					    echo the_content();
 					endwhile;
 
 					wp_reset_query();
@@ -66,9 +65,8 @@
 					<?php query_posts( 'category_name=brevity' );
 
 					while ( have_posts() ) : the_post();
-					    echo '<h2 class="red">'; the_title(); echo '</h2>';
-
-					    echo '<p>'; the_content(); echo '</p>';
+					    echo '<h2>'; the_title(); echo '</h2>';
+					    echo the_content();
 					endwhile;
 
 					wp_reset_query();
@@ -79,9 +77,8 @@
 					<?php query_posts( 'category_name=verity' );
 
 					while ( have_posts() ) : the_post();
-					    echo '<h2 class="red">'; the_title(); echo '</h2>';
-
-					    echo '<p>'; the_content(); echo '</p>';
+					    echo '<h2>'; the_title(); echo '</h2>';
+					    echo the_content();
 					endwhile;
 
 					wp_reset_query();

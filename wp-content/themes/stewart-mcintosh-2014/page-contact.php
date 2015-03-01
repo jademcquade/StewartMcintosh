@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<header class="entry-header">
-					<h1 class="entry-title">Get in touch</h1>
+					<h1>Get in touch</h1>
 				</header> 
 
 				<div class="entry-content">

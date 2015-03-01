@@ -2,10 +2,8 @@
 /**
  * The template for displaying all pages
  */
-
-get_header(); ?>
-
-<?php get_sidebar(); ?>
+get_header();
+get_sidebar(); ?>
 
 <div id="main-content" class="main-content">
 
@@ -15,7 +13,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<header class="entry-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1><?php the_title(); ?></h1>
 				</header> 
 
 				<div class="entry-content">

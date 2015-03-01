@@ -181,10 +181,8 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 									the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 								endif;
 
-								printf( '<span class="entry-date"><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s">%3$s</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span></span>',
+								printf( '<span class="entry-date"><time class="entry-date" datetime="%2$s">%3$s</time></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="%4$s" rel="author">%5$s</a></span></span>',
 									esc_url( get_permalink() ),
-									esc_attr( get_the_date( 'c' ) ),
-									esc_html( get_the_date() ),
 									esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 									get_the_author()
 								);
