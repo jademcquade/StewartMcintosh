@@ -20,11 +20,25 @@ get_header(); ?>
 
 				<div class="entry-content">
 
-					<p><span>T:</span> 0141 334 8475</p>
+					<p><span class="red bold">T:</span> 0141 334 8475</p>
 
-					<p><span>M:</span> 07889 280 802</p>
+					<p><span class="red bold">M:</span> 07889 280 802</p>
 
-					<p><span>E:</span> stewart.mcintosh@btinternet.com</p>
+					<p><span class="red bold">E:</span> stewart.mcintosh@btinternet.com</p>
+
+						<h3>Or send us a message</h3>
+
+						<form id="contact">
+
+							<input type="text" id="name" class="contact" placeholder="Enter your name" /><br/>
+
+							<input type="text" id="email" class="contact" placeholder="Your email" /><br/>
+
+							<textarea id="message" class="contact" placeholder="Say hello here"></textarea>
+
+							<input type="submit" id="send" value="Send message" />
+
+						</form>
 
 				</div>
 						
