@@ -15,17 +15,21 @@
 			<?php get_sidebar( 'footer' ); ?>
 
 				<div id="email">
-					<p>stewart.mcintosh@btinternet.com</p>
+					stewart.mcintosh@btinternet.com
 				</div>
 
-					<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-						<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-						<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					</nav>
+					<div id="footerNav">
+
+						<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+							<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+							<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						</nav>
+
+					</div>
 
 				<div class="site-info">
-					<a target="_blank" href="<?php echo esc_url( __( 'http://www.geo-graphicsdesign.com/' ) ); ?>"><?php printf( __( 'Site by %s' ), 'Geo-Graphics' ); ?></a>
+					<a target="_blank" href="<?php echo esc_url( __( 'http://www.geo-graphicsdesign.com/' ) ); ?>"><?php printf( __( 'site by %s' ), 'Geo-Graphics' ); ?></a>
 				</div><!-- .site-info -->
 
 		</footer><!-- #colophon -->

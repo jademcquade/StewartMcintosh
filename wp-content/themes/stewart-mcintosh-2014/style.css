@@ -142,11 +142,13 @@ h1 {
 	font-size: 26px;
 	line-height: 1.3846153846;
 	margin-bottom: 5px;
+	font-weight: 400;
 }
 
 h2 {
 	line-height: 1;
 	font-size: 22px;
+	font-weight: 400;
 }
 
 address {
@@ -933,7 +935,6 @@ span + .edit-link:before,
 .site-navigation a {
 	color: #fff;
 	display: block;
-	text-transform: uppercase;
 }
 
 .site-navigation a:hover {
@@ -2791,7 +2792,6 @@ span + .edit-link:before,
 
 .site-info {
 	padding: 15px 0;
-	border-top: 1px solid #eee;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -3494,12 +3494,16 @@ span + .edit-link:before,
 
 	/* Primary Navigation */
 
+	.header-main .primary-navigation {
+		text-transform: uppercase;
+	}
+
 	.primary-navigation {
 		float: right;
 		font-size: 11px;
 		padding: 0;
-		text-transform: uppercase;
 	}
+
 
 	.primary-navigation .menu-toggle {
 		display: none;
@@ -4414,7 +4418,7 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 
 #secondary {margin-bottom: 40px;}
 #secondary, .post-thumbnail, .site-footer {background: white;}
-.site-footer, .site-info, .site-info a {color: black;}
+.site-footer, .site-info, .site-info a {color: #fff;}
 
 .site-content .entry-header, .page .entry-content {margin-left: 0;}
 .site-content .entry-header {padding-right: 0;}
@@ -4432,9 +4436,33 @@ form label {width: auto;}
 	position: fixed;
 	bottom: 0;
 	background-color: #db001c;
+	font-size: 18px;
+	padding: 5px 30px;
 }
 .site-footer nav, .site-footer p, .site-footer a {color: #fff;}
 .site-footer a:hover, a:focus {color: #fff;}
+
+#email {
+	width: 30%;
+	float: left;
+	padding: 11px 0;
+}
+#footerNav {
+	width: 40%;
+	float: left;
+}
+#footerNav .primary-navigation {
+	float: left;
+}
+#footerNav .primary-navigation li {
+	font-size: 18px;
+	text-transform: lowercase;
+}
+.site-info {
+	width: 17%;
+	float: right;
+	padding: 11px 0;
+}
 
 
 
