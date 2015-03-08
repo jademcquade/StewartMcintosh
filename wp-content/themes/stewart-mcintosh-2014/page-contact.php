@@ -2,8 +2,9 @@
 /*
 Template Name: Contact Us
 */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
 <?php get_sidebar(); ?>
 
@@ -28,7 +29,7 @@ get_header(); ?>
 
 						<h3>Or send us a message</h3>
 
-						<form id="contact">
+						<form id="contact" action="http://localhost/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
 
 							<input type="text" id="name" class="contact" placeholder="Enter your name" /><br/>
 
@@ -36,7 +37,7 @@ get_header(); ?>
 
 							<textarea id="message" class="contact" placeholder="Say hello here"></textarea>
 
-							<input type="submit" id="send" value="Send message" />
+							<input type="submit" id="send" value="Send message" onclick="return validateForm()" />
 
 						</form>
 
