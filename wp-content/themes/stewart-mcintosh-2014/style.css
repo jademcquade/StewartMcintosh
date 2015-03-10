@@ -490,14 +490,6 @@ input[type="submit"]:focus {
 	color: #fff;
 }
 
-button:active,
-.button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	background-color: #55d737;
-}
-
 .search-field {
 	width: 100%;
 }
@@ -779,7 +771,7 @@ span + .edit-link:before,
 .site {
 	background-color: #fff;
 	position: relative;
-	max-width: 1600px;
+	max-width: 1300px;
 }
 
 .main-content {
@@ -3184,6 +3176,7 @@ h3 {font-size: 19px;}
 img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slider.wp-post-image {
 	margin: 0 auto;
 	display: block;
+	border: 1px solid #eee;
 }
 
 #overlay {
@@ -3237,7 +3230,7 @@ form label {width: auto;}
 	padding: 11px 0 11px 40px;
 }
 #footerWrap {
-	max-width: 1600px;
+	max-width: 1300px;
 	overflow: auto;
 	margin: 0 auto;
 }
@@ -3255,7 +3248,20 @@ form label {width: auto;}
 	float: right;
 }
 
-
+/* Post navigation links */
+#prev, #next {
+	float: left;
+}
+#prev {
+	margin-right: 20px;
+}
+#prev a, #next a {
+	color: #db001c;
+	text-decoration: none;
+}
+#prev a:hover, #next a:hover {
+	text-decoration: underline;
+}
 
 
 /**
@@ -3593,52 +3599,6 @@ form label {width: auto;}
 		padding: 0;
 	}
 
-	.slider .featu#db001c-content .entry-title {
-		font-size: 22px;
-		line-height: 1.0909090909;
-	}
-
-	.slider .featu#db001c-content .entry-header {
-		min-height: inherit;
-		padding: 24px 30px 48px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 50%;
-		z-index: 3;
-	}
-
-	.slider-control-paging {
-		background: transparent;
-		margin-top: -48px;
-		padding-left: 20px;
-		width: 50%;
-	}
-
-	.slider-direction-nav {
-		clear: none;
-		float: right;
-		margin-top: -48px;
-		width: 98px;
-	}
-
-	.slider-direction-nav li {
-		border: 0;
-		padding: 0 1px 0 0;
-	}
-
-	.slider-direction-nav li:last-child {
-		padding: 0 0 0 1px;
-	}
-
-	.slider-direction-nav a {
-		height: 48px;
-	}
-
-	.slider-direction-nav a:before {
-		line-height: 48px;
-	}
-
 	.primary-navigation .nav-menu {
 		font-size: 20px;
 	}
@@ -3695,7 +3655,7 @@ form label {width: auto;}
 
 	}
 
-	.primary-navigation {
+	#primary-navigation {
 		float: right;
 	}
 
@@ -3824,7 +3784,7 @@ form label {width: auto;}
 	}
 
 	#logo {
-		margin: 0 0 0 20px;
+		margin: 0 0 0 65px;
 		float: left;
 	}
 

@@ -14,15 +14,16 @@ get_sidebar(); ?>
 			if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<header class="entry-header"> 
-					<h1>Services</h1>
+					<h1><?php the_title(); ?></h1>
 				</header>			
 
 				<div class="entry-content">
-					<?php
-						the_content();
-						previous_post_link( '%link', 'Previous post', TRUE );
-						next_post_link( '%link', 'Next post', TRUE );
-					?>
+					
+					<?php the_content(); ?>
+
+					<div id="prev"><?php previous_post_link( '%link', 'Previous post', TRUE ); ?></div>
+
+					<div id="next"><?php next_post_link( '%link', 'Next post', TRUE ); ?></div>
 				</div>				
 						
 			<?php endwhile; else : ?>

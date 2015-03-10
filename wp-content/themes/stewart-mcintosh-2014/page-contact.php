@@ -31,11 +31,13 @@ Template Name: Contact Us
 
 						<form id="contact" action="http://localhost/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
 
-							<input type="text" id="name" class="contact" placeholder="Enter your name" /><br/>
+							<input type="text" id="name" name="name" class="contact" placeholder="Enter your name" /><br/>
 
-							<input type="text" id="email" class="contact" placeholder="Your email" /><br/>
+							<input type="text" id="subject" name="subject" class="contact" placeholder="Subject of message" /><br/>
 
-							<textarea id="message" class="contact" placeholder="Say hello here"></textarea>
+							<input type="text" id="email" name="email" class="contact" placeholder="someone@example.com" /><br/>
+
+							<textarea id="message" name="message" class="contact" placeholder="Say hello here"></textarea>
 
 							<input type="submit" id="send" value="Send message" onclick="return validateForm()" />
 
