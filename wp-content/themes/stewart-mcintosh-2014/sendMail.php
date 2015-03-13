@@ -34,7 +34,7 @@ $mail->AltBody = $message;
 if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    header("Location:http://localhost/stewart-mcintosh/success/");
+    header("Location:http://192.168.0.6/stewart-mcintosh/success/");
     exit;
 }
 

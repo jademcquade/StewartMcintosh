@@ -50,7 +50,7 @@
 		<div class="header-main">
 
 			<div id="logo">
-				<a href="http://localhost/stewart-mcintosh"><img src="<?php bloginfo ('template_url'); ?>/images/logo.png" alt="Stewart McIntosh Media" /></a>
+				<a href="http://192.168.0.6/stewart-mcintosh"><img src="<?php bloginfo ('template_url'); ?>/images/logo.png" alt="Stewart McIntosh Media" /></a>
 			</div>
 
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">

@@ -4,13 +4,18 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div id="slideImg">
+	<div class="slideImg">
 	<?php
 		if (is_mobile()) {
 		   the_post_thumbnail('small');
-		   } else {
-		   the_post_thumbnail('full');
-		} ?>
+		   }
+		else if (is_tablet()) {
+		   the_post_thumbnail('medium');
+		}
+		else {
+			the_post_thumbnail('home-slider');
+		} 
+	?>
 	</div>
 
 				

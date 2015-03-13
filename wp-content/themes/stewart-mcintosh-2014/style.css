@@ -3168,10 +3168,11 @@ h3 {font-size: 19px;}
 .red {color: #db001c;}
 .bold {font-weight: bold;}
 
-#logo {}
-
 #slider {
 	background: #f5f5f5;
+}
+.slideImg {
+	text-align: center;
 }
 img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slider.wp-post-image {
 	margin: 0 auto;

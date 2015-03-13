@@ -29,7 +29,7 @@ Template Name: Contact Us
 
 						<h3>Or send us a message</h3>
 
-						<form id="contact" action="http://localhost/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
+						<form id="contact" action="http://192.168.0.6/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
 
 							<input type="text" id="name" name="name" class="contact" placeholder="Enter your name" /><br/>
 
