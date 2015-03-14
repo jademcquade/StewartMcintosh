@@ -777,7 +777,7 @@ span + .edit-link:before,
 .main-content {
 	padding: 0 30px;
 	overflow: auto;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 
 /**
@@ -936,7 +936,7 @@ span + .edit-link:before,
 	padding: 15px 25px;
 }
 
-.primary-navigation a {
+.site-header .primary-navigation a {
 	padding: 7px 0;
 }
 
@@ -1052,7 +1052,7 @@ span + .edit-link:before,
 
 .site-content .entry-header {
 	background-color: #fff;
-	padding: 0 10px 12px;
+	padding: 0 10px 10px 0;
 }
 
 .site-content .has-post-thumbnail .entry-header {
@@ -3158,15 +3158,44 @@ span + .edit-link:before,
 }
 .primary-navigation a {color: #db001c;}
 
-#footerNav .primary-navigation a {color: #fff;}
+#footerNav .primary-navigation {
+	display: block;
+}
+#footerNav .menu-toggle {
+	display: none;
+}
+#footerNav .primary-navigation .nav-menu {
+	border: none;
+}
+#footerNav .primary-navigation li {
+	float: left;
+	margin-right: 20px;
+	border: none;
+}
+#footerNav .primary-navigation a {
+	color: #fff;
+	padding: none;
+}
+#footerNav .nav-menu {
+	display: block;
+}
 
 h3 {font-size: 19px;}
 .red {color: #db001c;}
 .bold {font-weight: bold;}
 
+#logo {
+	float: left;
+	margin: 10px 0 20px 20px;
+}
+.primary-navigation.toggled-on .nav-menu {
+	clear: both;
+}
+
 #slider {
 	background: #f5f5f5;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 .slideImg {
 	text-align: center;
@@ -3183,7 +3212,7 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 	background: none;
 }
 #intro {
-	padding: 20px 50px;
+	padding: 20px 35px;
 }
 
 #intro p {
@@ -3216,22 +3245,21 @@ form label {width: auto;}
 
 /* footer */
 .site-footer {
-	width: 100%;
 	background-color: #db001c;
 	font-size: 18px;
-	padding: 5px 0;
 }
 .site-footer nav, .site-footer p, .site-footer a {color: #fff;}
 .site-footer a:hover, a:focus {color: #fff;}
 
 #emailContact {
 	float: left;
-	padding: 11px 0 11px 40px;
 }
 #footerWrap {
 	max-width: 1300px;
 	overflow: auto;
 	margin: 0 auto;
+	padding: 20px 30px;
+	font-size: 17px;
 }
 #footerNav {
 	float: left;
@@ -3488,14 +3516,8 @@ form label {width: auto;}
 		margin-top: -48px;
 	}
 
-	#intro {
-		font-size: 18px;
-	}
-	#intro p {
-		font-size: 21px;		
-	}
 	#intro p:first-child {
-		font-size: 28px;
+		font-size: 24px;
 		font-weight: 200;
 	}
 
@@ -3549,9 +3571,15 @@ form label {width: auto;}
 
 @media screen and (min-width: 768px) {
 
-	.primary-navigation.toggled-on .nav-menu {
+	#intro p {
+		font-size:21px;
+	}
+	#intro p:first-child {
+		font-size: 28px;
+	}
 
-	padding: 15px 35px;
+	.primary-navigation.toggled-on .nav-menu {
+		padding: 15px 35px;
 	}
 
 	.search-toggle {
@@ -3560,7 +3588,7 @@ form label {width: auto;}
 
 	.search-box .search-field {
 		width: 50%;
-	}
+
 
 	.content-area {
 		float: left;
@@ -3625,6 +3653,10 @@ form label {width: auto;}
 		padding: 0;
 	}
 
+	#intro p {
+		font-size: 21px;
+	}
+
 	#intro p:first-child {
 		font-size: 28px;
 	}
@@ -3670,8 +3702,6 @@ form label {width: auto;}
 		overflow: hidden;
 	}
 
-	#emailContact {padding: 22px 0 11px 50px;}
-
 	#footerNav {
 		padding: 11px 0 11px 40px;
 	}
@@ -3679,7 +3709,6 @@ form label {width: auto;}
 		font-size: 14px;
 		padding: 26px 50px 0 30px;
 	} 	
-
 
 }
 
@@ -3771,10 +3800,6 @@ form label {width: auto;}
 		margin-bottom: 0;
 	}
 
-	#slider {
-		margin-bottom: 20px;
-	}
-
 	#secondary {
 		max-width: 400px;
 		padding-left: 30px;
@@ -3782,11 +3807,6 @@ form label {width: auto;}
 
 	.search-box-wrapper {
 		padding-left: 182px;
-	}
-
-	.site-content {
-		margin-right: 29.04761904%;
-		/*margin-left: 182px;*/
 	}
 
 	.site-content .entry-header {
@@ -4220,17 +4240,13 @@ form label {width: auto;}
 	#footerNav .menu-toggle {display: none;}
 	#footerNav .site-navigation li {display: inline-block; border: none; margin-right: 25px;}
 
-	#emailContact {padding: 11px 0 11px 40px;}
-
 	#footerNav {
 		padding-top: 10px;
 	}
 	#footerNav .primary-navigation {
 		padding: 0 30px;
 	}
-	#emailContact {
-		padding: 5px 30px 0 30px;
-	}
+
 	.site-info {
 		font-size: 14px;
 		padding: 10px 30px 0 30px;
@@ -4239,10 +4255,6 @@ form label {width: auto;}
 
 /* Up to iPad roughly */
 @media screen and (max-width: 968px) {
-
-	#primary {
-		padding: 20px 20px 0 20px;
-	}
 
 	.primary-navigation .menu-toggle {
 		display: block;
@@ -4260,20 +4272,7 @@ form label {width: auto;}
 	}
 }
 
-@media screen and (max-width: 1024px) {
-
-	#logo {
-		position: relative;
-		top: 10px;
-		padding-bottom: 25px;
-	}
-}
-
 @media screen and (min-width: 1024px) {
-
-	#page {
-		padding-top: 20px;
-	}
 
 	#slider {
 		margin-top: 20px;
@@ -4290,7 +4289,7 @@ form label {width: auto;}
 		top: 130px;
 		right: 0;
 		font-size: 22px;
-		padding-right: 50px;
+		padding-right: 30px;
 	}
 
 	#trio.entry-content div {width: 30%; margin-right: 30px;}
@@ -4414,7 +4413,37 @@ form label {width: auto;}
 		top: 20px;
 	}
 
+	.site-footer {	
+		padding: 5px 30px;
+	}
+
 	.site-info {
 		display: block;
-	}		
-}
+		padding: 11px 0;
+
+	}	
+
+
+	#emailContact {
+		float: left;
+		margin-top: 11px;
+	}
+	#footerWrap {
+		max-width: 1300px;
+		overflow: auto;
+		margin: 0 auto;
+		padding: 5px 0;
+	}
+	#footerNav {
+		float: left;
+	}
+	#footerNav .primary-navigation {
+		float: left;
+	}
+	#footerNav .primary-navigation li {
+		font-size: 18px;
+		text-transform: lowercase;
+		margin-right: 0;
+	}
+	
+	}
