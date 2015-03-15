@@ -939,18 +939,6 @@ span + .edit-link:before,
 	padding: 7px 0;
 }
 
-/* Secondary Navigation */
-
-.secondary-navigation {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	font-size: 12px;
-	margin: 48px 0;
-}
-
-.secondary-navigation a {
-	padding: 9px 0;
-}
-
 .menu-toggle {
 	background-color: #db001c;
 	border-radius: 0;
@@ -2076,7 +2064,6 @@ span + .edit-link:before,
 
 #secondary {
 	background-color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	clear: both;
 	color: rgba(255, 255, 255, 0.7);
 	position: relative;

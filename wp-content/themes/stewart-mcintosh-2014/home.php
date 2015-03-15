@@ -1,34 +1,35 @@
 <?php get_header(); ?>
 
-<div id="slider">
+<?php $detect = new Mobile_Detect; ?>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php query_posts( 'category_name=homepage-banner' ); ?>
 
-	<div class="slideImg">
-	<?php
-		if (is_mobile()) {
-		   the_post_thumbnail('small');
-		   }
-		else if (is_tablet()) {
-		   the_post_thumbnail('medium');
-		}
-		else {
-			the_post_thumbnail('home-slider');
-		} 
-	?>
-	</div>
+	<?php while ( have_posts() ) : the_post(); ?>
 
-				
-	<?php endwhile; else : ?>
-		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-	<?php endif; ?>
+	<div id="slider">
 
-	<?php wp_reset_query(); ?>
+		<div class="slideImg">
+
+		<?php
+
+			if ($detect->isMobile()) {
+				echo 'You on mobile';
+			} 
+
+		?>
+
+		</div>
+
+		<?php endwhile;
+
+		wp_reset_query(); ?>
+
+	</div>	
 
 	<div id="overlay">
 
 		<div id="intro">
-			<?php query_posts( 'category_name=homepage message' );
+			<?php query_posts( 'category_name=homepage-message' );
 
 				while ( have_posts() ) : the_post();
 

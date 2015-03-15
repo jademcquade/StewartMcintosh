@@ -215,7 +215,8 @@ function get_stylesheet_directory_uri() {
  */
 function get_stylesheet_uri() {
 	$stylesheet_dir_uri = get_stylesheet_directory_uri();
-	$stylesheet_uri = $stylesheet_dir_uri . '/style.css';
+	/*$stylesheet_uri = $stylesheet_dir_uri . '/style.css';*/
+	$stylesheet_uri = 'http://192.168.0.6/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/style.css';
 	/**
 	 * Filter the URI of the current theme stylesheet.
 	 *
