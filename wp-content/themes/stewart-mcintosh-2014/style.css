@@ -776,7 +776,8 @@ span + .edit-link:before,
 .main-content {
 	padding: 0 30px;
 	overflow: auto;
-	margin-bottom: 30px;
+	margin: 0 auto 30px auto;
+	max-width: 1300px;
 }
 
 /**
@@ -3181,7 +3182,6 @@ h3 {font-size: 19px;}
 #slider {
 	background: #f5f5f5;
 	overflow: hidden;
-	margin-bottom: 20px;
 }
 .slideImg {
 	text-align: center;
@@ -3203,13 +3203,19 @@ img.attachment-twentyfourteen-full-width.wp-post-image, img.attachment-home-slid
 
 #intro p {
 	margin-bottom: 0;
+	font-size: 21px;
+}
+#intro p:first-child {
+	font-weight: bold;
+	font-size: 26px;
+	font-weight: 400;
 }
 
 .home .entry-content {max-width: none;}
 
 
 #trio {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #trio.entry-content div {float: left;}
@@ -3502,11 +3508,6 @@ form label {width: auto;}
 		margin-top: -48px;
 	}
 
-	#intro p:first-child {
-		font-size: 24px;
-		font-weight: 200;
-	}
-
 	#slideImg {
 		max-height: 250px;
 		overflow: hidden;
@@ -3530,6 +3531,7 @@ form label {width: auto;}
 	.slideImg {
 		max-height: 200px;
 	}
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {

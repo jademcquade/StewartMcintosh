@@ -5,7 +5,7 @@ jQuery( document ).ready(function($) {
 
     //style the intro message on the homepage banner
 /*    $('#intro p:first').css({'font-size':'24px', 'font-weight':400});
-*/    $('#intro strong').css({'color':'red', 'font-style':'italic', 'font-size':'21px'});
+*/    $('#intro strong').css({'color':'#db001c', 'font-style':'italic', 'font-size':'21px'});
 
 });
 

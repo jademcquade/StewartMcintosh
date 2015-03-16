@@ -13,8 +13,12 @@
 		<?php
 
 			if ($detect->isMobile()) {
-				echo 'You on mobile';
+				the_post_thumbnail( 'small' );
 			} 
+			else {
+				the_post_thumbnail( 'home-slider' );
+			} 
+
 
 		?>
 

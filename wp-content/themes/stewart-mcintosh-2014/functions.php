@@ -73,15 +73,15 @@ function twentyfourteen_setup() {
 	// Add RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
 
-	// Enable support for Post Thumbnails, and declare two sizes.
+	// Enable support for Post Thumbnails,
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 250, 250, true );
 
-	add_image_size( 'tiny', 320, auto, true );
-	add_image_size( 'small', 640, auto, true );
-	add_image_size( 'medium', 768, auto, true );
-	add_image_size( 'large', 1024, auto, true );
-	add_image_size( 'home-slider', 1400, auto, true );
+	add_image_size( 'tiny', 340, 999999, true );
+	add_image_size( 'smallest', 420, 999999, true );
+	add_image_size( 'small', 580, 999999, true );
+	add_image_size( 'mid', 627, 999999, true );
+	add_image_size( 'home-slider', 1300, 999999, true );
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
@@ -268,6 +268,11 @@ function twentyfourteen_scripts() {
 	wp_enqueue_script( 'twentyfourteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20140616', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
+
+function picturefill_script() {
+    wp_enqueue_script( 'picturefill', get_template_directory_uri() . '/js/picturefill.min.js', '', '', true );
+}
+add_action( 'wp_enqueue_scripts', 'picturefill_script' );
 
 /**
  * Enqueue Google fonts style to admin screen for custom header display.
