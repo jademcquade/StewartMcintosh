@@ -73,19 +73,6 @@ function twentyfourteen_setup() {
 	// Add RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
 
-	// Enable support for Post Thumbnails,
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 270, 270, true );
-
-	add_image_size( 'tiny', 340, 999999, true );
-	add_image_size( 'smallest', 420, 999999, true );
-	add_image_size( 'small', 580, 999999, true );
-	add_image_size( 'mid', 627, 999999, true );
-	/* 768 - Medium - In Media settings */
-	/* 1024 - Large - In Media settings */
-	add_image_size( 'home-slider', 1300, 999999, true );
-
-
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary'   => __( 'Top primary menu', 'twentyfourteen' ),
@@ -269,56 +256,17 @@ function twentyfourteen_scripts() {
 	}
 
 	wp_enqueue_script( 'twentyfourteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20140616', true );
-    wp_enqueue_script( 'picturefill', get_template_directory_uri() . '/js/picturefill.min.js', '', '', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
 
-// Get image alt tag - Used for Polyfill
-function get_img_alt( $image ) {
-	$img_alt = trim( strip_tags( get_post_meta( $image, '_wp_attachment_image_alt', true ) ) );
-	return $img_alt;
-}
+// Enable support for Post Thumbnails,
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 270, 270, true );
 
-// setup Picturefill
-function add_picture_sources( $image ) {
-	$img_tiny = wp_get_attachment_image_src($image, 'tiny');
-	$img_smallest = wp_get_attachment_image_src($image, 'smallest');
-	$img_small = wp_get_attachment_image_src($image, 'small');
-	$img_mid = wp_get_attachment_image_src($image, 'mid');
-
-	$srcset = '<source srcset = "' . $img_mid[0] . '" media="(min-width: 768px)">';
-	$srcset = '<source srcset = "' . $img_small[0] . '" media="(min-width: 640px)">';
-	$srcset = '<source srcset = "' . $img_smallest[0] . '" media="(min-width: 480px)">';
-
-	return $srcset;
-}
-
-// Build shortcode for responsive image post attachments
-function responsive_insert_image( $atts ) {
-	extract( shortcode_atts( array (
-		'id' => 1,
-		'caption' => ''
-		), $atts ) );
-
-	$sources = add_picture_sources( $id );
-
-	return '<figure class="responsive_img">
-	<picture>
-	<!--[if IE 9]><video style="display: none;"><![endif]-->' .
-	$sources .
-	'<!--[if IE 9]></video><![endif]-->
-	<img srcset="' . wp_get_attachment_image_src($id, 'smallest')[0] . '" alt="' . get_img_alt($id) .'">
-	</picture><figcaption class="et_pb_text et_pb_text_align_center">' . $caption . '</figcaption></figure>';
-
-}
-add_shortcode( 'resp_image', 'responsive_insert_image' );
-
-// Populate shortcode with image ID and caption
-function repsonsive_editor_filter($html, $id, $caption, $title, $align, $url) {
-	return "[resp_image id='$id' caption='" . $caption . "']";
-}
-add_filter('image_send_to_editor', 'responsive_editor_filter', 10, 9);
+	add_image_size( 'small', 999999, 270 );
+	/* 640 - Medium - In Media settings */
+	/* 890 - Large - In Media settings */
+	add_image_size( 'home-slider', 1300, 999999, true );
 
 /**
  * Enqueue Google fonts style to admin screen for custom header display.
