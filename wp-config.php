@@ -79,5 +79,5 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
-define('WP_HOME','http://192.168.0.6/stewart-mcintosh');
-define('WP_SITEURL','http://192.168.0.6/stewart-mcintosh');
+define('WP_HOME','http://127.0.0.1/stewart-mcintosh');
+define('WP_SITEURL','http://127.0.0.1/stewart-mcintosh');
