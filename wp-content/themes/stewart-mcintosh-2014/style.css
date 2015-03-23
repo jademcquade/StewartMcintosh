@@ -3709,8 +3709,11 @@ form label {width: auto;}
 
 @media screen and (min-width: 948px) {
 
+	.home #logo {
+		margin-left: 25px;
+	}
 	#logo {
-		margin-left: 40px;
+		margin-left: 80px;
 	}
 
 	#secondary, .post-thumbnail {background: #fff;}
@@ -4301,6 +4304,10 @@ form label {width: auto;}
 	#primary-navigation {
 		float: right;
 		padding-right: 20px;
+	}
+
+	#masthead #primary-navigation {
+		margin-top: 5px;
 	}
 
 	.primary-navigation .menu-toggle {

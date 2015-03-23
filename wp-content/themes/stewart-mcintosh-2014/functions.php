@@ -532,3 +532,11 @@ function my_script()
     wp_enqueue_script( 'custom-script' );
 }
 add_action( 'wp_enqueue_scripts', 'my_script' );
+
+/* Disable update notifications for Themes, Plugins and Wordpress core */
+function remove_core_updates(){
+global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+add_filter('pre_site_transient_update_core','remove_core_updates');
+add_filter('pre_site_transient_update_plugins','remove_core_updates');
+add_filter('pre_site_transient_update_themes','remove_core_updates');

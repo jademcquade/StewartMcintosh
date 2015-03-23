@@ -1,6 +1,6 @@
 <?php
 
-require 'PHPMailer/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
@@ -10,7 +10,7 @@ $subject = $_POST['subject'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
@@ -34,7 +34,7 @@ $mail->AltBody = $message;
 if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    header("Location:http://192.168.0.6/stewart-mcintosh/success/");
+    header("Location:http://www.stewartmcintoshmedia.com/wp/success/");
     exit;
 }
 

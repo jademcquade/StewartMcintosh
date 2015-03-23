@@ -21,7 +21,7 @@ Template Name: Contact Us
 
 				<div class="entry-content">
 
-					<p><span class="red bold">T:</span> 0141 334 8475</p>
+					<?php /* <p><span class="red bold">T:</span> 0141 334 8475</p>
 
 					<p><span class="red bold">M:</span> 07889 280 802</p>
 
@@ -29,7 +29,7 @@ Template Name: Contact Us
 
 						<h3>Or send us a message</h3>
 
-						<form id="contact" action="http://192.168.0.6/stewart-mcintosh/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
+						<form id="contact" action="http://www.stewartmcintoshmedia.com/wp/wp-content/themes/stewart-mcintosh-2014/sendMail.php" method="POST">
 
 							<input type="text" id="name" name="name" class="contact" placeholder="Enter your name" /><br/>
 
@@ -41,7 +41,10 @@ Template Name: Contact Us
 
 							<input type="submit" id="send" value="Send message" onclick="return validateForm()" />
 
-						</form>
+						</form> --> */ ?>
+
+					<?php the_content(); ?>
+
 
 				</div>
 						
